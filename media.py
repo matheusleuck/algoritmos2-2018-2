@@ -7,19 +7,20 @@ print ("Primeiro valor:" , valor1)
 print ("Segundo valor:" , valor2)
 print ("Terceiro valor:" , valor3)
 print ("Media do primeiro e segundo valor:" , media)
-print ("Calculo de maior valor(primeiro, segundo, terceiro):")
-#Calculo de maior valor
+print ("Maior valor(primeiro, segundo, terceiro):")
+maior = max(valor1,valor2,valor3)#Calculo do maior valor.
+#Informando quais dos valores é o maior
 if valor1 > valor2 and valor1 > valor3:
-	print ("Maior valor: Primeiro ->", valor1)
+	print ("Primeiro: %s" % maior)
 elif valor2 > valor1 and valor2 > valor3:
-	print ("Maior valor: Segundo ->", valor2)
+	print ("Segundo: %s" % maior)
 elif valor3 > valor1 and valor3 > valor2:
-	print ("Maior valor: Terceiro ->", valor3)
+	print ("Terceiro: %s" % maior)
 elif valor1 == valor2 > valor3:
-	print ("Valores repetidos: Primeiro e Segundo ->", valor1, "=",valor2)
+	print ("Valores repetidos: Primeiro e Segundo: %s" % maior)
 elif valor2 == valor3 > valor1:
-	print ("Valores repetidos: Segundo e Terceiro ->", valor2, "=", valor3)
+	print ("Valores repetidos: Segundo e Terceiro: %s" % maior)
 elif valor1 == valor3 > valor2:
-	print ("Valores repetidos: Primeiro e Terceiro ->", valor1, "=", valor3)
+	print ("Valores repetidos: Primeiro e Terceiro: %s" % maior)
 else:
-	print ("Todos os valores iguais:", valor1, "=", valor2, "=", valor3)
+	print ("Todos os valores iguais: %s" % maior)
